@@ -9,13 +9,6 @@ const Home = () => {
     <>
       <Row>
         <Col>
-          <div className="app-home-title">
-            <h1>JULIE CUMBO</h1>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           <Carousel />
         </Col>
       </Row>
