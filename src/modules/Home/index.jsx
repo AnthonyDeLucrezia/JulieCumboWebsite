@@ -15,7 +15,7 @@ const Home = () => {
       </Row>
       <Row>
         <Col>
-          <Carousel className="carousel-container" />
+          <Carousel />
         </Col>
       </Row>
     </>

@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import "./index.scss";
 
-const AppCarousel = (props) => {
-  const { className } = props;
+const AppCarousel = () => {
   return (
-    <Carousel className={className}>
+    <Carousel className="app-carousel">
       <Carousel.Item>
         <img
           className="d-block w-100"

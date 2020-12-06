@@ -1,15 +1,9 @@
 @import "./../../styles/colors.scss";
 
-.carousel-container {
-  height: 80vh;
-  .carousel-inner {
-    height: 80vh;
-  }
-}
-
 .app-home-title {
   display: flex;
   justify-content: center;
+
   h1 {
     text-transform: uppercase;
     padding: 3vh 0px;
