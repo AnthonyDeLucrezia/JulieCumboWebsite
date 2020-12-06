@@ -1,0 +1,15 @@
+@import "/src/styles/colors.scss";
+
+.app-header {
+  background-color: $bg-primary;
+  .nav-item {
+    padding: 10px 0px;
+    a {
+      color: $text-secondary;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      line-height: 1.3;
+      font-weight: 500;
+    }
+  }
+}
