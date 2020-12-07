@@ -1,6 +1,5 @@
 import React from "react";
 import AppHeader from "./components/header/index.jsx";
-import SocialHeader from "./components/header/socialHeader.jsx";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./modules/Home/index.jsx";
@@ -14,7 +13,6 @@ export const menu = [
 
 const App = () => (
   <Router>
-    <SocialHeader />
     <AppHeader />
     <Container fluid className="app-container">
       <Switch>
