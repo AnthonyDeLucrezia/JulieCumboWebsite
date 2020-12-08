@@ -8,21 +8,10 @@ const Home = () => {
   return (
     <>
       <Row>
-        <Col>
-          <div className="app-home-title">
-            <h1>JULIE CUMBO</h1>
-          </div>
-        </Col>
+        <Col>{/* <Carousel /> */}</Col>
       </Row>
       <Row>
-        <Col>
-          <Carousel />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <AppTitle>bonjour</AppTitle>
-        </Col>
+        <Col>{/* <AppTitle>bonjour</AppTitle> */}</Col>
       </Row>
     </>
   );
