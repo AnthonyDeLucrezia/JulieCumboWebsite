@@ -1,15 +1,96 @@
 @import "/src/styles/colors.scss";
 
 .app-header {
-  background-color: $bg-primary;
-  .nav-item {
-    padding: 10px 0px;
-    a {
-      color: $text-secondary;
-      text-transform: uppercase;
-      font-size: 11.5px;
-      line-height: 1.3;
-      font-weight: 500;
+  width: 100%;
+  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+
+  .app-nav {
+    height: 60px;
+    background-color: $bg-primary;
+
+    .menu-items {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item {
+      padding: 5px 0px;
+
+      a {
+        color: $text-primary;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 1.5;
+      }
+    }
+  }
+
+  .social-header {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    color: $text-secondary;
+    background-color: $bg-secondary;
+    .social-header-icon {
+      padding-right: 20px;
+    }
+  }
+
+  .logo-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    height: 125px;
+    border-bottom: 1px solid $border-primary;
+    background-color: $bg-primary;
+
+    padding: 0 20%;
+
+    .logo-item {
+      .img-logo {
+        height: 100px;
+        width: auto;
+      }
+    }
+
+    .contact-items {
+      display: flex;
+      align-items: center;
+
+      .contact-col {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .contact-icon {
+          padding: 15px;
+          color: $text-tertiary;
+          svg {
+            font-size: 35px;
+            border: 2px solid $text-tertiary;
+            padding: 5px;
+            border-radius: 50px;
+          }
+        }
+        .contact-text {
+          color: $text-quaternary;
+          h5 {
+            color: $text-tertiary;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.1;
+          }
+        }
+      }
     }
   }
 }
