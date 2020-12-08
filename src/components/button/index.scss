@@ -1,0 +1,13 @@
+@import "/src/styles/colors.scss";
+
+.btn-primary {
+  color: $text-secondary !important;
+  background-color: $bg-secondary !important;
+  border-color: $bg-secondary !important;
+}
+
+.btn-secondary {
+  color: $text-secondary !important;
+  background-color: $bg-quaternary !important;
+  border-color: $bg-quaternary !important;
+}

@@ -1,34 +1,36 @@
 import React from "react";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
+import AppBadge from "./../../components/appBadge/index.jsx";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <>
+    <div className={"home-container"}>
       <div className="home-slider">
         <img src={`images/pexels-evg-culture-1170979.jpg`} alt="First slide" />
         <div className="home-slider-content">
           <div className="home-slider-text">
-            <h1>Appoitments</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              justo metus, mattis non lobortis at, hendrerit nec sem. Donec
-              aliquam lacus nec urna maximus posuere. Curabitur ornare nisi eget
-              fermentum
-            </p>
+            <div>
+              <h1>Julie Cumbo</h1>
+              <p>
+                Confort, souci du travail bien fait et confiance retrouvée,
+                telles sont nos priorités.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <Row>
-        <Col className="home-about-us">
+      <Row className="home-about-us">
+        <Col md={{ span: 4, offset: 2 }} className="cabinet-text">
           <h1>Notre cabinet</h1>
           <blockquote class="home-quote">
-            <img class="img-circle" src="images/julie.jpg" alt="" />
             <p>
               <q>
-                I urgently required dental help last 4th of July. And despite
-                all other clinics being closed, BeDentist took my appointment!
+                Un espace dédié aux soins spécialisés en orthodontie et
+                orthopédie dento-maxillo faciale. Notre objectif est de proposer
+                des traitements qui correspondent aux besoins, mais aussi aux
+                souhaits de nos patients.
               </q>
             </p>
             <div>
@@ -37,17 +39,47 @@ const Home = () => {
             </div>
           </blockquote>
         </Col>
+        <Col md={{ span: 4 }}>
+          <img src={`images/map.png`} alt="First slide" className={"img-map"} />
+        </Col>
+      </Row>
+      <Row className="team-row">
+        <Col>
+          <Row>
+            <Col>
+              <h1>Notre équipe</h1>
+            </Col>
+          </Row>
+          <Row className="team-list">
+            <Col md={{ span: 3 }}>
+              <AppBadge img={`images/julie.jpg`} />
+            </Col>
+            <Col md={{ span: 3 }}>
+              <AppBadge img={`images/julie.jpg`} />
+            </Col>
+            <Col md={{ span: 3 }}>
+              <AppBadge img={`images/julie.jpg`} />
+            </Col>
+            <Col md={{ span: 3 }}>
+              <AppBadge img={`images/julie.jpg`} />
+            </Col>
+          </Row>
+        </Col>
       </Row>
       <Row className="help-row">
         <Col md={{ span: 3, offset: 2 }}>
-          <h1>Des questions ?</h1>
+          <h1>Des questions ? Une urgence ?</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Col>
         <Col md={{ span: 3, offset: 1 }} className="help-button">
-          <AppButton text={"Nous contacter"} />
+          <AppButton
+            text={"Nous contacter"}
+            variant="secondary"
+            className="question-btn"
+          />
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

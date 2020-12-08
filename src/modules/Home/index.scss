@@ -1,94 +1,93 @@
 @import "./../../styles/colors.scss";
-
-.home-slider {
-  margin-right: -15px;
-  margin-left: -15px;
-  height: 70vh;
-  width: calc(100% + 30px);
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
-  img {
-    width: 100%;
+.home-container {
+  .row {
+    h1 {
+      padding: 5vh 0px;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      line-height: 1;
+    }
   }
-  .home-slider-content {
+
+  .home-slider {
+    margin-right: -15px;
+    margin-left: -15px;
     height: 70vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 0;
-    position: absolute;
-    .home-slider-text {
-      padding-top: 20vh;
-      color: white;
+    width: calc(100% + 30px);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+    img {
+      width: 100%;
+    }
+    .home-slider-content {
+      height: 70vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      position: absolute;
+      .home-slider-text {
+        color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1 {
+          font-size: 70px;
+          padding-bottom: 2vh;
+        }
+        p {
+          font-size: 1.1em;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .home-about-us {
+    color: $text-primary;
+    padding-top: 5vh;
+    text-align: center;
+
+    h1 {
+      color: $text-tertiary;
+    }
+
+    .img-map {
+      height: 400px;
+    }
+  }
+
+  .help-row {
+    padding: 5vh;
+    background-color: $bg-secondary;
+    color: $text-secondary;
+    box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+    .help-button {
+      margin: auto;
+      .question-btn {
+        transition: 0.2s ease-in;
+        padding: 15px 100px;
+        font-weight: 600;
+        font-size: 1.1em;
+        border-radius: 3px;
+        box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+
+  .team-row {
+    padding-bottom: 10vh;
+    h1 {
+      color: $text-tertiary;
       text-align: center;
-      h1 {
-        font-size: 70px;
-      }
-      p {
-        width: 50%;
-        margin: auto;
-      }
     }
-  }
-}
-.home-about-us {
-  color: $text-primary;
-  width: 100%;
-  padding: 10vh 0px;
-  text-align: center;
-  h1 {
-    color: $text-tertiary;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 1;
-  }
-  p {
-    width: 50%;
-    margin: auto;
-  }
-
-  .home-quote {
-    margin: auto;
-    padding-top: 3vh;
-    width: 60%;
-
-    .img-circle {
-      border-radius: 50%;
-      height: 115px;
-      height: 115px;
-    }
-
-    p {
+    .team-list {
       padding-top: 3vh;
-    }
-  }
-}
-
-.help-row {
-  padding: 5vh;
-  background-color: $bg-secondary;
-  color: $text-secondary;
-  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
-
-  h1 {
-    text-align: left;
-    text-transform: uppercase;
-    padding: 3vh 0px;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 1;
-  }
-  .help-button {
-    margin: auto;
-    .btn {
-      transition: 0.2s ease-in;
-      padding: 12px 15px;
-      font-weight: 800;
-      border-radius: 3px;
-      box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.08);
     }
   }
 }
