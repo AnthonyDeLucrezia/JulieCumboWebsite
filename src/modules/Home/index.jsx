@@ -8,14 +8,10 @@ const Home = () => {
   return (
     <>
       <Row>
-        <Col>
-          <Carousel />
-        </Col>
+        <Col>{/* <Carousel /> */}</Col>
       </Row>
       <Row>
-        <Col>
-          <AppTitle>bonjour</AppTitle>
-        </Col>
+        <Col>{/* <AppTitle>bonjour</AppTitle> */}</Col>
       </Row>
     </>
   );

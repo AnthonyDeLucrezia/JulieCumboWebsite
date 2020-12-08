@@ -2,5 +2,6 @@
 @import "./../styles/colors.scss";
 
 .app-container {
-  background-color: $bg-primary;
+  background-color: $bg-tertiary;
+  min-height: 100vh;
 }

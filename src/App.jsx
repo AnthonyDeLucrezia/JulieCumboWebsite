@@ -14,7 +14,7 @@ export const menu = [
 const App = () => (
   <Router>
     <AppHeader />
-    <Container fluid className="app-container">
+    <Container fluid>
       <Switch>
         {menu.map((x) => {
           return <Route path={x.link}>{x.component}</Route>;
