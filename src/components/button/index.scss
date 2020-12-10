@@ -1,0 +1,15 @@
+@import "/src/styles/colors.scss";
+
+.btn-primary {
+  padding: 10px 30px !important;
+  color: $text-secondary !important;
+  background-color: $bg-secondary !important;
+  border-color: $bg-secondary !important;
+}
+
+.btn-secondary {
+  padding: 10px 30px !important;
+  color: $text-secondary !important;
+  background-color: $bg-quaternary !important;
+  border-color: $bg-quaternary !important;
+}

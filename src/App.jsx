@@ -4,10 +4,18 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./modules/Home/index.jsx";
 import Contact from "./modules/Contact/index.jsx";
+import Team from "./modules/Team/index.jsx";
+import Treatments from "./modules/Treatments/index.jsx";
+import Blog from "./modules/Blog/index.jsx";
+import FAQ from "./modules/FAQ/index.jsx";
 import "./styles/global.scss";
 
 export const menu = [
-  { title: "Home", link: "/home", component: <Home /> },
+  { title: "Accueil", link: "/home", component: <Home /> },
+  { title: "Equipe", link: "/team", component: <Team /> },
+  { title: "Traitements", link: "/treatments", component: <Treatments /> },
+  { title: "Blog", link: "/blog", component: <Blog /> },
+  { title: "F.A.Q", link: "/faq", component: <FAQ /> },
   { title: "Contact", link: "/contact", component: <Contact /> },
 ];
 

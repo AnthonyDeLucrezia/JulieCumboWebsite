@@ -16,7 +16,7 @@ const LogoHeader = () => {
             <FontAwesomeIcon icon={faPhoneAlt} />
           </div>
           <div className="contact-text">
-            <h5>Call us today</h5>
+            <h5>Appelez nous</h5>
             <span>555–123–2323</span>
           </div>
         </div>
@@ -25,8 +25,8 @@ const LogoHeader = () => {
             <FontAwesomeIcon icon={faClock} />
           </div>
           <div className="contact-text">
-            <h5>Opening hours</h5>
-            <span>Mon–Fri: 9am–6pm; Sun: 10am–1pm</span>
+            <h5>Horaires d'ouvertures</h5>
+            <span>Lun–Ven: 9h00 - 18h00; Dim: 10h - 13h</span>
           </div>
         </div>
       </div>

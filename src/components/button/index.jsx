@@ -1,11 +1,16 @@
 import { Button } from "react-bootstrap";
 import React from "react";
+import "./index.scss";
 
 const AppButton = (props) => {
-  const { onClick, text } = props;
+  const { onClick, text, variant, className } = props;
 
   return (
-    <Button variant="primary" onClick={onClick}>
+    <Button
+      className={className}
+      variant={variant ? variant : "primary"}
+      onClick={onClick}
+    >
       {text}
     </Button>
   );
