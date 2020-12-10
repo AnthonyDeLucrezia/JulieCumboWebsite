@@ -2,9 +2,77 @@ import React from "react";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
+import ImageCatalog from "../../components/ImageCatalog/index.jsx";
+import AppFooter from "../../components/footer/index.jsx";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
+  const team = [
+    {
+      img: `images/tony.jpg`,
+      name: "Anthony De Lucrezia",
+      description: "Developer",
+    },
+    {
+      img: `images/fabian.jpeg`,
+      name: "Fabian Collier",
+      description: "Developer",
+    },
+    {
+      img: `images/julie.jpg`,
+      name: "Julie Cumbo",
+      description: "La boss",
+    },
+    {
+      img: `images/lechat.jpg`,
+      name: "Le chat",
+      description: "Il est mignon",
+    },
+    {
+      img: `images/roger.jpg`,
+      name: "Roger Bigou",
+      description: "Un type random",
+    },
+  ];
+
+  const imageCatalog = [
+    {
+      img: `images/img1.jpeg`,
+      description: "Developer",
+    },
+    {
+      img: `images/img2.jpeg`,
+      description: "Developer",
+    },
+    {
+      img: `images/img3.jpeg`,
+      description: "La boss",
+    },
+    {
+      img: `images/img4.jpeg`,
+      description: "Il est mignon",
+    },
+    {
+      img: `images/img5.jpeg`,
+      description: "Un type random",
+    },
+    {
+      img: `images/img6.jpg`,
+      description: "Un type random",
+    },
+    {
+      img: `images/img7.jpg`,
+      description: "Il est mignon",
+    },
+    {
+      img: `images/img8.jpg`,
+      description: "Un type random",
+    },
+    {
+      img: `images/img9.jpg`,
+      description: "Un type random",
+    },
+  ];
   return (
     <div className={"home-container"}>
       <div className="home-slider">
@@ -43,29 +111,6 @@ const Home = () => {
           <img src={`images/map.png`} alt="First slide" className={"img-map"} />
         </Col>
       </Row>
-      <Row className="team-row">
-        <Col>
-          <Row>
-            <Col>
-              <h1>Notre équipe</h1>
-            </Col>
-          </Row>
-          <Row className="team-list">
-            <Col md={{ span: 3 }}>
-              <AppBadge img={`images/julie.jpg`} />
-            </Col>
-            <Col md={{ span: 3 }}>
-              <AppBadge img={`images/julie.jpg`} />
-            </Col>
-            <Col md={{ span: 3 }}>
-              <AppBadge img={`images/julie.jpg`} />
-            </Col>
-            <Col md={{ span: 3 }}>
-              <AppBadge img={`images/julie.jpg`} />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
       <Row className="help-row">
         <Col md={{ span: 3, offset: 2 }}>
           <h1>Des questions ? Une urgence ?</h1>
@@ -79,6 +124,55 @@ const Home = () => {
           />
         </Col>
       </Row>
+
+      <Row className="team-row">
+        <Col>
+          <Row>
+            <Col>
+              <h1>Notre équipe</h1>
+            </Col>
+          </Row>
+          <Row className="team-list">
+            <Col>
+              <Row>
+                {team.map((x) => (
+                  <Col md={{ span: 12 / x.length }}>
+                    <AppBadge
+                      img={x.img}
+                      name={x.name}
+                      description={x.description}
+                    />
+                  </Col>
+                ))}
+              </Row>
+              <Row>
+                <Col className="team-btn-col">
+                  <AppButton
+                    text={"En savoir plus"}
+                    variant="primary"
+                    className="team-btn"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row className="offices-row">
+        <Col>
+          <Row>
+            <Col>
+              <h1>Nos locaux</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <ImageCatalog images={imageCatalog} />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <AppFooter />
     </div>
   );
 };

@@ -50,7 +50,7 @@
 
   .home-about-us {
     color: $text-primary;
-    padding-top: 5vh;
+    padding: 5vh 0px;
     text-align: center;
 
     h1 {
@@ -71,7 +71,7 @@
       margin: auto;
       .question-btn {
         transition: 0.2s ease-in;
-        padding: 15px 100px;
+        padding: 15px 100px !important;
         font-weight: 600;
         font-size: 1.1em;
         border-radius: 3px;
@@ -81,13 +81,27 @@
   }
 
   .team-row {
-    padding-bottom: 10vh;
+    background-color: $bg-primary;
+    padding: 5vh 10vw;
     h1 {
       color: $text-tertiary;
       text-align: center;
     }
     .team-list {
       padding-top: 3vh;
+    }
+    .team-btn-col {
+      padding-top: 5vh;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .offices-row {
+    padding: 5vh;
+    h1 {
+      color: $text-tertiary;
+      text-align: center;
     }
   }
 }

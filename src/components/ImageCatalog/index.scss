@@ -1,0 +1,30 @@
+@import "/src/styles/colors.scss";
+
+.app-image-catalog-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 15vw;
+
+  .catalog-image-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    img {
+      object-fit: cover;
+      height: 350px;
+    }
+  }
+}

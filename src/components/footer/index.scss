@@ -1,0 +1,13 @@
+@import "/src/styles/colors.scss";
+
+.app-footer {
+  height: 20vh;
+  background-color: $bg-secondary;
+  color: $text-secondary;
+
+  .app-footer-logo {
+    img {
+      height: 100px;
+    }
+  }
+}

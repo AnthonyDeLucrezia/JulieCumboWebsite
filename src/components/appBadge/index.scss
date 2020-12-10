@@ -11,11 +11,17 @@
     height: 100px;
     border-radius: 50%;
   }
-  .badge-desc {
+  .badge-name {
     text-align: center;
-    color: $text-primary;
+    color: $text-tertiary;
     font-weight: 600;
     width: 250px;
     padding-top: 25px;
+  }
+  .badge-desc {
+    text-align: center;
+    color: $text-quaternary;
+    width: 250px;
+    padding-top: 5px;
   }
 }
