@@ -1,7 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
-@import "./../styles/colors.scss";
+@import "./colors.scss";
+@import "./variables.scss";
 
 .app-container {
   background-color: $bg-tertiary;
-  min-height: 100vh;
+  min-height: 200vh;
+
+  .container-fluid {
+    margin-top: $header-height;
+  }
 }
