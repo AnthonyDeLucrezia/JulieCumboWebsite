@@ -125,9 +125,12 @@
         }
         .contact-text {
           color: $text-quaternary;
+          span {
+            font-size: 0.9em;
+          }
           h5 {
             color: $text-tertiary;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             letter-spacing: 1.1;
           }

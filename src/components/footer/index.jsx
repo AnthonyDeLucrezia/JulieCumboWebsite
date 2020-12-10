@@ -1,18 +1,56 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 import "./index.scss";
 
 const AppFooter = () => {
+  const history = useHistory();
   return (
     <Row className="app-footer">
-      <Col md={{ span: 3, offset: 1 }}>
-        <div className="app-footer-links"></div>
+      <Col md={{ span: 3, offset: 1 }} className="app-footer-col">
+        <div className="app-footer-links">
+          <span className="footer-title">Liens utiles</span>
+          <ul>
+            <li key="/home" onClick={() => history.push("/home")}>
+              <span>Accueil</span>
+            </li>
+            <li key="/faq" onClick={() => history.push("/faq")}>
+              <span>FAQ</span>
+            </li>
+            <li key="/contacts" onClick={() => history.push("/contacts")}>
+              <span>Contacts</span>
+            </li>
+          </ul>
+        </div>
       </Col>
-      <Col md={{ span: 3 }}>
-        <div className="app-footer-hours"></div>
+      <Col md={{ span: 3 }} className="app-footer-col">
+        <div className="app-footer-hours">
+          <span className="footer-title">Horaires d'ouvertures</span>
+          <div className="contact-col">
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faClock} />
+            </div>
+            <div className="contact-text">
+              <span>Lun–Ven: 9h00–18h00; Dim: 10h–13h</span>
+            </div>
+          </div>
+        </div>
       </Col>
-      <Col md={{ span: 3 }}>
-        <div className="app-footer-contact"></div>
+      <Col md={{ span: 3 }} className="app-footer-col">
+        <div className="app-footer-contact">
+          <span className="footer-title">Contacts</span>
+          <div className="contact-col">
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faPhoneAlt} />
+            </div>
+            <div className="contact-text">
+              <span>555–123–2323</span>
+            </div>
+          </div>
+        </div>
       </Col>
     </Row>
   );
