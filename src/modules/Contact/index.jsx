@@ -74,7 +74,7 @@ const Map = () => (
 );
 
 const Contact = () => (
-  <div className="w3-padding-48 w3-content">
+  <div className="w3-padding-48 w3-content maps-container">
     <FormContact />
     <Infos />
     <Map />
