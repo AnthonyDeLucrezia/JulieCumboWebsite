@@ -48,22 +48,20 @@ const FormContact = () => (
 const Infos = () => (
   <div className="w3-padding-48">
     <h3 className="w3-wide w3-margin-bottom-32 w3-center">INFOS PRATIQUES</h3>
-    <Container>
-      <Row className="w3-row-padding">
-        <Col>
-          <p>E-mail :</p>
-          <p>Téléphone : </p>
-          <p>Adresse :</p>
-        </Col>
-        <Col>
-          <p>Lundi : 08:30 - 17:00</p>
-          <p>Mardi : Fermé</p>
-          <p>Mercredi : 08:30 - 13:00</p>
-          <p>Jeudi : 08:30 - 17:00</p>
-          <p>Vendredi : 08:30 - 16:30</p>
-        </Col>
-      </Row>
-    </Container>
+    <Row className="w3-row-padding">
+      <Col>
+        <p>E-mail :</p>
+        <p>Téléphone : </p>
+        <p>Adresse :</p>
+      </Col>
+      <Col>
+        <p>Lundi : 08:30 - 17:00</p>
+        <p>Mardi : Fermé</p>
+        <p>Mercredi : 08:30 - 13:00</p>
+        <p>Jeudi : 08:30 - 17:00</p>
+        <p>Vendredi : 08:30 - 16:30</p>
+      </Col>
+    </Row>
   </div>
 );
 
@@ -74,10 +72,12 @@ const Map = () => (
 );
 
 const Contact = () => (
-  <div className="w3-padding-48 w3-content maps-container">
+  <div className="w3-padding-48 w3-content ">
     <FormContact />
     <Infos />
-    <Map />
+    <div className="maps-container">
+      <Map />
+    </div>
   </div>
 );
 

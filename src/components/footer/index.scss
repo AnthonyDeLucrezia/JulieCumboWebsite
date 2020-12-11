@@ -1,9 +1,12 @@
 @import "/src/styles/colors.scss";
+@import "/src/styles/variables.scss";
 
 .app-footer {
   background-color: $bg-secondary;
   color: $text-secondary;
   padding: 3vh;
+  height: $footer-height;
+  overflow: hidden;
 
   .app-footer-col {
     display: flex;

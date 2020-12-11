@@ -23,7 +23,7 @@ export const menu = [
 const App = () => (
   <Router>
     <AppHeader />
-    <Container fluid>
+    <Container fluid className="app-content-container">
       <Switch>
         {menu.map((x) => {
           return <Route path={x.link}>{x.component}</Route>;
@@ -32,8 +32,8 @@ const App = () => (
           <Home />
         </Route>
       </Switch>
-      <AppFooter />
     </Container>
+    <AppFooter />
   </Router>
 );
 

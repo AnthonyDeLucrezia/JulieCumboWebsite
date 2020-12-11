@@ -4,9 +4,9 @@
 
 .app-container {
   background-color: $bg-tertiary;
-  min-height: 100vh;
 
-  .container-fluid {
+  .app-content-container {
     margin-top: $header-height;
+    min-height: calc(calc(100vh - #{$header-height}) - #{$footer-height});
   }
 }

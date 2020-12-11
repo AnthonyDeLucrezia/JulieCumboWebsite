@@ -12,8 +12,14 @@ const AppHeader = () => {
   const [activeKey, setActiveKey] = useState("/home");
 
   useEffect(() => {
-    history.push(activeKey);
-  }, [activeKey]);
+    return history.listen((location) => {
+      setActiveKey(location.pathname);
+    });
+  }, [history]);
+
+  const onNavItemClick = (link) => {
+    history.push(link);
+  };
 
   return (
     <div className="app-header">
@@ -26,7 +32,7 @@ const AppHeader = () => {
               <Nav.Item>
                 <Nav.Link
                   key={x.link}
-                  onClick={() => setActiveKey(x.link)}
+                  onClick={() => onNavItemClick(x.link)}
                   className={activeKey === x.link && "activeKey"}
                 >
                   {x.title}
