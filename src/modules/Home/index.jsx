@@ -3,35 +3,37 @@ import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
 import ImageCatalog from "../../components/ImageCatalog/index.jsx";
-import AppFooter from "../../components/footer/index.jsx";
+
+import { useHistory } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
+  const history = useHistory();
   const team = [
     {
       img: `images/tony.jpg`,
-      name: "Anthony De Lucrezia",
-      description: "Developer",
+      title: "Anthony De Lucrezia",
+      subTitle: "Developer",
     },
     {
       img: `images/fabian.jpeg`,
-      name: "Fabian Collier",
-      description: "Developer",
+      title: "Fabian Collier",
+      subTitle: "Developer",
     },
     {
       img: `images/julie.jpg`,
-      name: "Julie Cumbo",
-      description: "La boss",
+      title: "Julie Cumbo",
+      subTitle: "La boss",
     },
     {
       img: `images/lechat.jpg`,
-      name: "Le chat",
-      description: "Il est mignon",
+      title: "Le chat",
+      subTitle: "Il est mignon",
     },
     {
       img: `images/roger.jpg`,
-      name: "Roger Bigou",
-      description: "Un type random",
+      title: "Roger Bigou",
+      subTitle: "Un type random",
     },
   ];
 
@@ -73,6 +75,11 @@ const Home = () => {
       description: "Un type random",
     },
   ];
+
+  const onTeamClick = () => {
+    history.push("/team");
+  };
+
   return (
     <div className={"home-container"}>
       <div className="home-slider">
@@ -139,8 +146,8 @@ const Home = () => {
                   <Col md={{ span: 12 / x.length }}>
                     <AppBadge
                       img={x.img}
-                      name={x.name}
-                      description={x.description}
+                      title={x.title}
+                      subTitle={x.subTitle}
                     />
                   </Col>
                 ))}
@@ -150,6 +157,7 @@ const Home = () => {
                   <AppButton
                     text={"En savoir plus"}
                     variant="primary"
+                    onClick={onTeamClick}
                     className="team-btn"
                   />
                 </Col>
@@ -172,7 +180,6 @@ const Home = () => {
           </Row>
         </Col>
       </Row>
-      <AppFooter />
     </div>
   );
 };

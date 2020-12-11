@@ -8,6 +8,7 @@ import Team from "./modules/Team/index.jsx";
 import Treatments from "./modules/Treatments/index.jsx";
 import Blog from "./modules/Blog/index.jsx";
 import FAQ from "./modules/FAQ/index.jsx";
+import AppFooter from "./components/footer/index.jsx";
 import "./styles/global.scss";
 
 export const menu = [
@@ -31,6 +32,7 @@ const App = () => (
           <Home />
         </Route>
       </Switch>
+      <AppFooter />
     </Container>
   </Router>
 );
