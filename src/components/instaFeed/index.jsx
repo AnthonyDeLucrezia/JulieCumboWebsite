@@ -10,7 +10,7 @@ const InstaFeed = (props) => {
       <Feed
         userName="Jcortho"
         className="insta-feed"
-        classNameLoading="insta-loading"
+        classNameLoading="Loading"
         limit="15"
       />
     </div>
