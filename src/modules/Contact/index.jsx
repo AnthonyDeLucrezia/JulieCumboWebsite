@@ -5,7 +5,6 @@ import MapContainer from "/src/components/googleMaps/index.jsx";
 
 const FormContact = () => (
   <div className="w3-padding-48">
-    <h4 className="w3-wide w3-margin-bottom-32 w3-center">CONTACTEZ-NOUS</h4>
     <Form>
       <Form.Row>
         <Form.Group as={Col} controlId="formGridName">
@@ -72,11 +71,18 @@ const Map = () => (
 );
 
 const Contact = () => (
-  <div className="w3-padding-48 w3-content ">
-    <FormContact />
-    <Infos />
-    <div className="maps-container">
-      <Map />
+  <div className="contact-container">
+    <Row className="contact-title">
+      <Col>
+        <h1>CONTACTEZ-NOUS</h1>
+      </Col>
+    </Row>
+    <div className="w3-content">
+      <FormContact />
+      <Infos />
+      <div className="maps-container">
+        <Map />
+      </div>
     </div>
   </div>
 );
