@@ -9,6 +9,7 @@ import Treatments from "./modules/Treatments/index.jsx";
 import Blog from "./modules/Blog/index.jsx";
 import FAQ from "./modules/FAQ/index.jsx";
 import AppFooter from "./components/footer/index.jsx";
+import ErrorBoundary from "./components/Errors/index.jsx";
 import "./styles/global.scss";
 
 export const menu = [
@@ -22,18 +23,20 @@ export const menu = [
 
 const App = () => (
   <Router>
-    <AppHeader />
-    <Container fluid className="app-content-container">
-      <Switch>
-        {menu.map((x) => {
-          return <Route path={x.link}>{x.component}</Route>;
-        })}
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Container>
-    <AppFooter />
+    <ErrorBoundary>
+      <AppHeader />
+      <Container fluid className="app-content-container">
+        <Switch>
+          {menu.map((x) => {
+            return <Route path={x.link}>{x.component}</Route>;
+          })}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Container>
+      <AppFooter />
+    </ErrorBoundary>
   </Router>
 );
 
