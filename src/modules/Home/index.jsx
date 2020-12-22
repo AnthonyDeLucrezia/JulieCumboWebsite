@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
-import ImageCatalog from "../../components/ImageCatalog/index.jsx";
+import ImageCatalog from "../../components/imageCatalog/index.jsx";
 
 import { useHistory } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
@@ -142,15 +142,17 @@ const Home = () => {
           <Row className="team-list">
             <Col>
               <Row>
-                {team.map((x) => (
-                  <Col md={{ span: 12 / x.length }}>
-                    <AppBadge
-                      img={x.img}
-                      title={x.title}
-                      subTitle={x.subTitle}
-                    />
-                  </Col>
-                ))}
+                <Col>
+                  <div className="teams-flex">
+                    {team.map((x) => (
+                      <AppBadge
+                        img={x.img}
+                        title={x.title}
+                        subTitle={x.subTitle}
+                      />
+                    ))}
+                  </div>
+                </Col>
               </Row>
               <Row>
                 <Col className="team-btn-col">

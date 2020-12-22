@@ -1,19 +1,33 @@
 import { Card, Button } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusSquare, faMinusSquare } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 
 const AccordionCard = (props) => {
-  const { title, content } = props;
+  const { title, content, cardKey, className } = props;
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Card>
+    <Card className={className}>
       <Card.Header>
-        <Accordion.Toggle as={Button} variant="link" eventKey="1">
-          {title}
+        <Accordion.Toggle
+          as={Button}
+          variant="link"
+          eventKey={cardKey}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <h5>
+            <FontAwesomeIcon icon={isOpen ? faMinusSquare : faPlusSquare} />{" "}
+            {title}
+          </h5>
         </Accordion.Toggle>
       </Card.Header>
-      <Accordion.Collapse eventKey="1">
-        <Card.Body>{content}</Card.Body>
+      <Accordion.Collapse eventKey={cardKey}>
+        <Card.Body>
+          <p className="content">{content}</p>
+        </Card.Body>
       </Accordion.Collapse>
     </Card>
   );

@@ -1,15 +1,23 @@
 import Accordion from "react-bootstrap/Accordion";
 import AccordionCard from "./accordionCard.jsx";
-import React from "react";
+import "./index.scss";
+import React, { useState } from "react";
 
 const AppAccordion = (props) => {
   const { rows } = props;
+  const [activeKey, setActiveKey] = useState(undefined);
 
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion className="accordion-list" activeKey={activeKey}>
       {rows.map((x) => {
         return (
-          <AccordionCard title={x.title} content={x.content} key={x.key} />
+          <AccordionCard
+            title={x.title}
+            content={x.content}
+            cardKey={x.key}
+            onClick={() => setActiveKey(x.key)}
+            className="accordion-card"
+          />
         );
       })}
     </Accordion>
