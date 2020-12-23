@@ -1,34 +1,18 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import AppAccordion from "./../../components/accordion/index.jsx";
+import { useTranslation } from "react-i18next";
 import "./index.scss";
 
 const FAQ = () => {
-  const questions = [
-    {
-      title: "Envie d'une petite bière ?",
-      key: "1",
-      content:
-        "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
-    },
-    {
-      title: "Une deuxième ?",
-      key: "2",
-      content:
-        "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
-    },
-    {
-      title: "Dernière pour la route ?",
-      key: "3",
-      content:
-        "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
-    },
-  ];
+  const { t } = useTranslation();
+  const questions = t("faq.questions");
+
   return (
     <div className={"faq-container"}>
       <Row className="faq-title">
         <Col>
-          <h1>F.A.Q</h1>
+          <h1>{t("faq.title")}</h1>
         </Col>
       </Row>
       <Row>
@@ -45,7 +29,13 @@ const FAQ = () => {
       </Row>
       <Row>
         <Col className="questions-container">
-          <AppAccordion rows={questions} />
+          <AppAccordion
+            rows={questions.map((x, index) => ({
+              title: x.title,
+              content: x.description,
+              key: index,
+            }))}
+          />
         </Col>
       </Row>
     </div>

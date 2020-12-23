@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import AppBadge from "./../../components/appBadge/index.jsx";
+import { useTranslation } from "react-i18next";
 import "./index.scss";
 
 const Team = () => {
+  const { t } = useTranslation();
   const team = [
     {
       img: `images/tony.jpg`,
@@ -46,7 +48,7 @@ const Team = () => {
     <div className={"team-container"}>
       <Row className="team-title">
         <Col>
-          <h1>Notre équipe</h1>
+          <h1>{t("team.title")}</h1>
         </Col>
       </Row>
 
