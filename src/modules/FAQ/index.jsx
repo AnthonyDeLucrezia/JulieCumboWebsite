@@ -32,8 +32,8 @@ const FAQ = () => {
           <AppAccordion
             rows={questions.map((x, index) => ({
               title: x.title,
-              content: x.description,
-              key: index,
+              key: index.toString(),
+              content: x.response,
             }))}
           />
         </Col>
