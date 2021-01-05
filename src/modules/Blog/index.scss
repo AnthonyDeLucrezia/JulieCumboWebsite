@@ -1,7 +1,7 @@
 @import "./../../styles/colors.scss";
-.team-container {
+.blog-container {
   padding-bottom: 10vh;
-  .team-title {
+  .blog-title {
     h1 {
       padding: 5vh 0px;
       text-transform: uppercase;
@@ -12,9 +12,5 @@
       color: $text-tertiary;
       text-align: center;
     }
-  }
-
-  .team-list {
-    padding: 0px 10vw;
   }
 }

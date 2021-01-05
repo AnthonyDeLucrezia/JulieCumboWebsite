@@ -71,7 +71,7 @@
       margin: auto;
       .question-btn {
         transition: 0.2s ease-in;
-        padding: 15px 100px !important;
+        padding: 15px 50px !important;
         font-weight: 600;
         font-size: 1.1em;
         border-radius: 3px;
@@ -82,13 +82,19 @@
 
   .team-row {
     background-color: $bg-primary;
-    padding: 5vh 10vw;
+    padding: 0px 10vw 5vh 10vw;
     h1 {
       color: $text-tertiary;
       text-align: center;
     }
     .team-list {
       padding-top: 3vh;
+      .teams-flex {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
     .team-btn-col {
       padding-top: 5vh;

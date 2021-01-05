@@ -1,7 +1,7 @@
 @import "./../../styles/colors.scss";
-.team-container {
+.faq-container {
   padding-bottom: 10vh;
-  .team-title {
+  .faq-title {
     h1 {
       padding: 5vh 0px;
       text-transform: uppercase;
@@ -14,7 +14,13 @@
     }
   }
 
-  .team-list {
-    padding: 0px 10vw;
+  .faq-descritpion {
+    padding: 0px 25vw;
+    text-align: justify;
+  }
+
+  .questions-container {
+    padding: 5vh 15vw;
+    text-align: justify;
   }
 }

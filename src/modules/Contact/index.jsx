@@ -1,11 +1,11 @@
-import "./index.scss";
 import React from "react";
 import { Form, Button, Container, Col, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import MapContainer from "/src/components/googleMaps/index.jsx";
+import "./index.scss";
 
 const FormContact = () => (
   <div className="w3-padding-48">
-    <h4 className="w3-wide w3-margin-bottom-32 w3-center">CONTACTEZ-NOUS</h4>
     <Form>
       <Form.Row>
         <Form.Group as={Col} controlId="formGridName">
@@ -71,14 +71,24 @@ const Map = () => (
   </div>
 );
 
-const Contact = () => (
-  <div className="w3-padding-48 w3-content ">
-    <FormContact />
-    <Infos />
-    <div className="maps-container">
-      <Map />
+const Contact = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="contact-container">
+      <Row className="contact-title">
+        <Col>
+          <h1>{t("contact.title")}</h1>
+        </Col>
+      </Row>
+      <div className="w3-content">
+        <FormContact />
+        <Infos />
+        <div className="maps-container">
+          <Map />
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export { Contact as default };

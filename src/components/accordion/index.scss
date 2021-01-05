@@ -1,0 +1,23 @@
+@import "/src/styles/colors.scss";
+.accordion-list {
+  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+  .accordion-card {
+    .btn-link {
+      all: unset;
+    }
+    svg {
+      margin-right: 5px;
+      font-size: 15px;
+    }
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 1;
+      color: $text-tertiary;
+    }
+    .content {
+      color: $text-primary;
+    }
+  }
+}

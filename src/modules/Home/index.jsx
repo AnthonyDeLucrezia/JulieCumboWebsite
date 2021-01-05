@@ -2,12 +2,13 @@ import React from "react";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
-import ImageCatalog from "../../components/ImageCatalog/index.jsx";
-
+import ImageCatalog from "../../components/imageCatalog/index.jsx";
+import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
+  const { t } = useTranslation();
   const history = useHistory();
   const team = [
     {
@@ -80,6 +81,10 @@ const Home = () => {
     history.push("/team");
   };
 
+  const onContactClick = () => {
+    history.push("/contact");
+  };
+
   return (
     <div className={"home-container"}>
       <div className="home-slider">
@@ -87,30 +92,22 @@ const Home = () => {
         <div className="home-slider-content">
           <div className="home-slider-text">
             <div>
-              <h1>Julie Cumbo</h1>
-              <p>
-                Confort, souci du travail bien fait et confiance retrouvée,
-                telles sont nos priorités.
-              </p>
+              <h1>{t("home.slider.title")}</h1>
+              <p>{t("home.slider.subtitle")}</p>
             </div>
           </div>
         </div>
       </div>
       <Row className="home-about-us">
         <Col md={{ span: 4, offset: 2 }} className="cabinet-text">
-          <h1>Notre cabinet</h1>
+          <h1>{t("home.cabinet.title")}</h1>
           <blockquote class="home-quote">
             <p>
-              <q>
-                Un espace dédié aux soins spécialisés en orthodontie et
-                orthopédie dento-maxillo faciale. Notre objectif est de proposer
-                des traitements qui correspondent aux besoins, mais aussi aux
-                souhaits de nos patients.
-              </q>
+              <q>{t("home.cabinet.description")}</q>
             </p>
             <div>
-              <cite>Julie Cumbo</cite>
-              <time datetime="2018-04-30">– May 10, 2018</time>
+              <cite>{t("home.cabinet.author")}</cite>
+              <time datetime="2018-04-30"> – {t("home.cabinet.date")}</time>
             </div>
           </blockquote>
         </Col>
@@ -120,14 +117,15 @@ const Home = () => {
       </Row>
       <Row className="help-row">
         <Col md={{ span: 3, offset: 2 }}>
-          <h1>Des questions ? Une urgence ?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>{t("home.question.title")}</h1>
+          <p>{t("home.question.description")}</p>
         </Col>
         <Col md={{ span: 3, offset: 1 }} className="help-button">
           <AppButton
-            text={"Nous contacter"}
+            text={t("home.question.button")}
             variant="secondary"
             className="question-btn"
+            onClick={onContactClick}
           />
         </Col>
       </Row>
@@ -136,26 +134,28 @@ const Home = () => {
         <Col>
           <Row>
             <Col>
-              <h1>Notre équipe</h1>
+              <h1>{t("home.team.title")}</h1>
             </Col>
           </Row>
           <Row className="team-list">
             <Col>
               <Row>
-                {team.map((x) => (
-                  <Col md={{ span: 12 / x.length }}>
-                    <AppBadge
-                      img={x.img}
-                      title={x.title}
-                      subTitle={x.subTitle}
-                    />
-                  </Col>
-                ))}
+                <Col>
+                  <div className="teams-flex">
+                    {team.map((x) => (
+                      <AppBadge
+                        img={x.img}
+                        title={x.title}
+                        subTitle={x.subTitle}
+                      />
+                    ))}
+                  </div>
+                </Col>
               </Row>
               <Row>
                 <Col className="team-btn-col">
                   <AppButton
-                    text={"En savoir plus"}
+                    text={t("home.team.button")}
                     variant="primary"
                     onClick={onTeamClick}
                     className="team-btn"
@@ -170,7 +170,7 @@ const Home = () => {
         <Col>
           <Row>
             <Col>
-              <h1>Nos locaux</h1>
+              <h1>{t("home.office.title")}</h1>
             </Col>
           </Row>
           <Row>
