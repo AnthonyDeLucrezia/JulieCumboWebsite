@@ -18,7 +18,7 @@ const FormContact = () => (
         </Form.Group>
         <Form.Group as={Col} controlId="formGridBirthdate">
           <Form.Label>Date de naissance patient</Form.Label>
-          <Form.Control type="date" />
+          <Form.Control type="date"/>
         </Form.Group>
       </Form.Row>
 
@@ -39,7 +39,7 @@ const FormContact = () => (
       </Form.Group>
 
       <Button variant="primary" type="submit" block>
-        Submit
+        Envoyer
       </Button>
     </Form>
   </div>
