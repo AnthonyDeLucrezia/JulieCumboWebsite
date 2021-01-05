@@ -3,8 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  // the output bundle won't be optimized for production but suitable for development
-  mode: "development",
   // the app entry point is /src/index.js
   entry: path.resolve(__dirname, "src", "index.js"),
 
@@ -43,12 +41,7 @@ module.exports = {
     publicPath: "/",
     filename: "bundle.js",
   },
-  devServer: {
-    contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    historyApiFallback: true,
-  },
+
   // add a custom index.html as the template
   plugins: [
     new HtmlWebpackPlugin({
@@ -56,9 +49,6 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       "process.env.PUBLIC_URL": path.join(__dirname, "public/"),
-      "process.env": {
-        NODE_ENV: JSON.stringify("development"),
-      },
     }),
   ],
 };

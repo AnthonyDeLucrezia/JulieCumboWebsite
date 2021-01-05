@@ -17,14 +17,7 @@ const FAQ = () => {
       </Row>
       <Row>
         <Col>
-          <p className="faq-descritpion">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            sagittis consequat lacus. Curabitur mauris tellus, congue et aliquam
-            nec, faucibus non sapien. Cras id sem lobortis, consequat lacus at,
-            vestibulum massa. Proin sit amet elit quis augue posuere gravida.
-            Nunc et dignissim eros. Duis euismod non sapien et placerat.
-            Pellentesque viverra augue a mi iaculis auctor.
-          </p>
+          <p className="faq-descritpion">{t("faq.description")}</p>
         </Col>
       </Row>
       <Row>

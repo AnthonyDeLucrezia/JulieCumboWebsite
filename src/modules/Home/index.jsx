@@ -82,7 +82,7 @@ const Home = () => {
   };
 
   const onContactClick = () => {
-    history.push("/contact§èuè");
+    history.push("/contact");
   };
 
   return (
