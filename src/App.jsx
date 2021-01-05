@@ -10,6 +10,8 @@ import Blog from "./modules/Blog/index.jsx";
 import FAQ from "./modules/FAQ/index.jsx";
 import AppFooter from "./components/footer/index.jsx";
 import ErrorBoundary from "./components/Errors/index.jsx";
+import { useTranslation } from "react-i18next";
+
 import "./styles/global.scss";
 
 export const menu = [
@@ -21,23 +23,26 @@ export const menu = [
   { title: "Contact", link: "/contact", component: <Contact /> },
 ];
 
-const App = () => (
-  <Router>
-    <ErrorBoundary>
-      <AppHeader />
-      <Container fluid className="app-content-container">
-        <Switch>
-          {menu.map((x) => {
-            return <Route path={x.link}>{x.component}</Route>;
-          })}
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Container>
-      <AppFooter />
-    </ErrorBoundary>
-  </Router>
-);
+const App = () => {
+  const { t, i18n } = useTranslation();
+  return (
+    <Router>
+      <ErrorBoundary>
+        <AppHeader />
+        <Container fluid className="app-content-container">
+          <Switch>
+            {menu.map((x) => {
+              return <Route path={x.link}>{x.component}</Route>;
+            })}
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Container>
+        <AppFooter />
+      </ErrorBoundary>
+    </Router>
+  );
+};
 
 export { App as default };

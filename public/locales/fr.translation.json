@@ -1,0 +1,56 @@
+{
+  "home": {
+    "slider": {
+      "title": "JulieCumbo",
+      "subtitle": "Confort, souci du travail bien fait et confiance retrouvée, telles sont nos priorités."
+    },
+    "cabinet": {
+      "title": "Notre cabinet",
+      "description": "Un espace dédié aux soins spécialisés en orthodontie et orthopédie dento-maxillo faciale. Notre objectif est de proposer des traitements qui correspondent aux besoins, mais aussi aux souhaits de nos patients.",
+      "author": "Julie Cumbo",
+      "date": "May 10, 2018"
+    },
+    "question": {
+      "title": "Des questions ? Une urgence ?",
+      "button": "Nous contacter",
+      "description": "Pellentesque lobortis tellus vitae nulla viverra dapibus"
+    },
+    "team": {
+      "title": "Notre équipe",
+      "button": "En savoir plus"
+    },
+    "office": {
+      "title": "Nos locaux"
+    }
+  },
+  "team": {
+    "title": "Notre équipe"
+  },
+  "treatments": {
+    "title": "Nos traitements"
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "contact": {
+    "title": "contactez-nous"
+  },
+  "faq": {
+    "title": "F.A.Q",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis consequat lacus. Curabitur mauris tellus, congue et aliquam nec, faucibus non sapien. Cras id sem lobortis, consequat lacus at, vestibulum massa. Proin sit amet elit quis augue posuere gravida. Nunc et dignissim eros. Duis euismod non sapien et placerat. Pellentesque viverra augue a mi iaculis auctor.",
+    "questions": [
+      {
+        "title": "Envie d'une bière ?",
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+      },
+      {
+        "title": "Une petite deuxième ?",
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+      },
+      {
+        "title": "Dernière pour la route ?",
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+      }
+    ]
+  }
+}
