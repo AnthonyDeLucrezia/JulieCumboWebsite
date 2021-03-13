@@ -16,7 +16,7 @@ const AppTeamMember = (props) => {
       <div className="team-body">
         {title && <div className="team-title">{title}</div>}
         {subTitle && <div className="team-subtitle">{subTitle}</div>}
-        {description && <div className="team-desc">{description}</div>}
+        {description && <p className="team-desc">{description}</p>}
       </div>
     </div>
   );
