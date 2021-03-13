@@ -6,14 +6,11 @@
     },
     "cabinet": {
       "title": "Notre cabinet",
-      "description": "Un espace dédié aux soins spécialisés en orthodontie et orthopédie dento-maxillo faciale. Notre objectif est de proposer des traitements qui correspondent aux besoins, mais aussi aux souhaits de nos patients.",
-      "author": "Julie Cumbo",
-      "date": "May 10, 2018"
+      "description": " Un espace dédié aux soins spécialisés en orthodontie et orthopédie dento-maxillo faciale. Notre objectif est de proposer des traitements qui correspondent aux besoins, mais aussi aux souhaits de nos patients."
     },
     "question": {
       "title": "Des questions ? Une urgence ?",
-      "button": "Nous contacter",
-      "description": "Pellentesque lobortis tellus vitae nulla viverra dapibus"
+      "button": "Nous contacter"
     },
     "team": {
       "title": "Notre équipe",

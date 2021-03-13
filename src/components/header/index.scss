@@ -80,8 +80,19 @@
     align-items: center;
     color: $text-secondary;
     background-color: $bg-secondary;
-    .social-header-icon {
+    .social-header-icon-instagram a{
       padding-right: 20px;
+      color : $text-secondary !important;
+    }
+    .social-header-icon-instagram a:hover{
+      color : $social-icon-instagram !important;
+    }
+    .social-header-icon-fb a{
+      padding-right: 20px;
+      color : $text-secondary !important;
+    }
+    .social-header-icon-fb a:hover{
+      color : $social-icon-fb !important;
     }
   }
 

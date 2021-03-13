@@ -109,7 +109,7 @@ export class MapContainer extends Component {
         >
           <Marker
             onClick={this.onMarkerClick}
-            name={"Kenyatta International Convention Centre"}
+            name={"JC Ortho"}
             position={{ lat: 50.438673, lng: 3.80095 }}
             icon={{
               url: "images/dent-logo.png",
