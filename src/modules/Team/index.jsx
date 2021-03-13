@@ -9,38 +9,38 @@ const Team = () => {
   const team = [
     {
       img: `images/tony.jpg`,
-      title: "Anthony De Lucrezia",
-      subTitle: "Developer",
+      title: "Julie Cumbo",
+      subTitle: "Orthodontiste",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, sem non semper hendrerit, nunc massa interdum nibh, vitae congue felis nisl sed augue. Aliquam fringilla libero vel neque varius fringilla. Pellentesque convallis metus a enim finibus elementum et vel dui. Sed quis sem scelerisque, varius odio et, laoreet nisi. Nam dapibus est accumsan ornare elementum. In suscipit leo erat, nec viverra ligula laoreet nec. Vestibulum urna mauris, venenatis vitae dictum vel, pretium eget ante. Nulla sed leo eget nisi aliquet sodales vel non ipsum. Phasellus et mi sit amet sem ornare aliquam eget ut lectus. Praesent ornare euismod massa in sagittis. Aliquam semper, ante ac fermentum feugiat, diam arcu accumsan neque, suscipit rutrum dolor nisl nec magna. Praesent aliquam aliquet lectus vitae interdum.",
+      "Spécialiste en orthodontie exclusive et fondatrice du cabinet JC Ortho depuis 2008. Votre sourire, votre profil et votre bien être est au cœur de mes préoccupations. Attentive aux évolutions de ma discipline, je m’investis depuis une quinzaine d’années dans ce que la science et la technologie ont de meilleur à offrir. Je m’entoure de spécialistes tels que des stomatologues, chirurgiens maxillo facial, ORL, posturologues, kinésithérapeutes, orthoptistes et logopèdes pour la prise en charge de vos traitements afin de réaliser une orthodontie fonctionnelle optimale. Le domaine des troubles du sommeil chez l’enfant me tient particulièrement à cœur, je reste attentive aux dernières recommandations dans ce domaine. Le sourire et votre bien être restent une priorité."
     },
     {
       img: `images/fabian.jpeg`,
-      title: "Fabian Collier",
-      subTitle: "Developer",
+      title: "Analisa Sorini",
+      subTitle: "Logopède",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, sem non semper hendrerit, nunc massa interdum nibh, vitae congue felis nisl sed augue. Aliquam fringilla libero vel neque varius fringilla. Pellentesque convallis metus a enim finibus elementum et vel dui. Sed quis sem scelerisque, varius odio et, laoreet nisi. Nam dapibus est accumsan ornare elementum. In suscipit leo erat, nec viverra ligula laoreet nec. Vestibulum urna mauris, venenatis vitae dictum vel, pretium eget ante. Nulla sed leo eget nisi aliquet sodales vel non ipsum. Phasellus et mi sit amet sem ornare aliquam eget ut lectus. Praesent ornare euismod massa in sagittis. Aliquam semper, ante ac fermentum feugiat, diam arcu accumsan neque, suscipit rutrum dolor nisl nec magna. Praesent aliquam aliquet lectus vitae interdum.",
+        "Spécialisée en thérapie myo-fonctionnelle assure la prise en charge fonctionnelle associée aux traitements orthodontiques.",
     },
     {
       img: `images/julie.jpg`,
-      title: "Julie Cumbo",
-      subTitle: "La boss",
+      title: "Gwendoline Di Nicolo",
+      subTitle: "Assistante dentaire",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, sem non semper hendrerit, nunc massa interdum nibh, vitae congue felis nisl sed augue. Aliquam fringilla libero vel neque varius fringilla. Pellentesque convallis metus a enim finibus elementum et vel dui. Sed quis sem scelerisque, varius odio et, laoreet nisi. Nam dapibus est accumsan ornare elementum. In suscipit leo erat, nec viverra ligula laoreet nec. Vestibulum urna mauris, venenatis vitae dictum vel, pretium eget ante. Nulla sed leo eget nisi aliquet sodales vel non ipsum. Phasellus et mi sit amet sem ornare aliquam eget ut lectus. Praesent ornare euismod massa in sagittis. Aliquam semper, ante ac fermentum feugiat, diam arcu accumsan neque, suscipit rutrum dolor nisl nec magna. Praesent aliquam aliquet lectus vitae interdum.",
+        "Assure la préparation, la désinfection et la stérilisation du matériel et du cabinet. Elle vous rassurera et vous exposera les consignes d’hygiènes et les recommandations pour mener à bien votre traitement.",
     },
     {
       img: `images/lechat.jpg`,
-      title: "Le chat",
-      subTitle: "Il est mignon",
+      title: "Anne-Sophie De Weer",
+      subTitle: "Secrétaire",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, sem non semper hendrerit, nunc massa interdum nibh, vitae congue felis nisl sed augue. Aliquam fringilla libero vel neque varius fringilla. Pellentesque convallis metus a enim finibus elementum et vel dui. Sed quis sem scelerisque, varius odio et, laoreet nisi. Nam dapibus est accumsan ornare elementum. In suscipit leo erat, nec viverra ligula laoreet nec. Vestibulum urna mauris, venenatis vitae dictum vel, pretium eget ante. Nulla sed leo eget nisi aliquet sodales vel non ipsum. Phasellus et mi sit amet sem ornare aliquam eget ut lectus. Praesent ornare euismod massa in sagittis. Aliquam semper, ante ac fermentum feugiat, diam arcu accumsan neque, suscipit rutrum dolor nisl nec magna. Praesent aliquam aliquet lectus vitae interdum.",
+        " Nos deux secrétaires médicales assurent l’accueil des patients et vous aidera dans vos démarches administratives. Elles assurent votre suivi de dossier mutuelle, assurance et financier.",
     },
     {
       img: `images/roger.jpg`,
-      title: "Roger Bigou",
-      subTitle: "Un type random",
+      title: "Allison Joniaux",
+      subTitle: "Secrétaire",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, sem non semper hendrerit, nunc massa interdum nibh, vitae congue felis nisl sed augue. Aliquam fringilla libero vel neque varius fringilla. Pellentesque convallis metus a enim finibus elementum et vel dui. Sed quis sem scelerisque, varius odio et, laoreet nisi. Nam dapibus est accumsan ornare elementum. In suscipit leo erat, nec viverra ligula laoreet nec. Vestibulum urna mauris, venenatis vitae dictum vel, pretium eget ante. Nulla sed leo eget nisi aliquet sodales vel non ipsum. Phasellus et mi sit amet sem ornare aliquam eget ut lectus. Praesent ornare euismod massa in sagittis. Aliquam semper, ante ac fermentum feugiat, diam arcu accumsan neque, suscipit rutrum dolor nisl nec magna. Praesent aliquam aliquet lectus vitae interdum.",
+        "",
     },
   ];
 

@@ -10,14 +10,11 @@ import "./index.scss";
 const SocialHeader = () => {
   return (
     <div className="social-header">
-      <div className="social-header-icon">
-        <FontAwesomeIcon icon={faFacebookSquare} />
+      <div className="social-header-icon-fb">
+      <a href="https://www.facebook.com/cabinetjcortho"><FontAwesomeIcon icon={faFacebookSquare} size="lg" /></a>
       </div>
-      <div className="social-header-icon">
-        <FontAwesomeIcon icon={faLinkedin} />
-      </div>
-      <div className="social-header-icon">
-        <FontAwesomeIcon icon={faInstagram} />
+      <div className="social-header-icon-instagram">
+      <a href="https://www.instagram.com/jcortho/"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
       </div>
     </div>
   );

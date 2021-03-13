@@ -6,6 +6,9 @@ import ImageCatalog from "../../components/imageCatalog/index.jsx";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 const Home = () => {
   const { t } = useTranslation();
@@ -13,28 +16,28 @@ const Home = () => {
   const team = [
     {
       img: `images/tony.jpg`,
-      title: "Anthony De Lucrezia",
-      subTitle: "Developer",
+      title: "Julie Cumbo",
+      subTitle: "Orthodontiste",
     },
     {
       img: `images/fabian.jpeg`,
-      title: "Fabian Collier",
-      subTitle: "Developer",
+      title: "Analisa Sorini",
+      subTitle: "Logopède",
     },
     {
       img: `images/julie.jpg`,
-      title: "Julie Cumbo",
-      subTitle: "La boss",
+      title: "Gwendoline Di Nicolo",
+      subTitle: "Assisstante dentaire",
     },
     {
       img: `images/lechat.jpg`,
-      title: "Le chat",
-      subTitle: "Il est mignon",
+      title: "Anne-Sophie De Weer",
+      subTitle: "Secrétaire",
     },
     {
-      img: `images/roger.jpg`,
-      title: "Roger Bigou",
-      subTitle: "Un type random",
+      img: `images/allison.jpg`,
+      title: "Allison Joniaux",
+      subTitle: "Secrétaire",
     },
   ];
 
@@ -103,12 +106,8 @@ const Home = () => {
           <h1>{t("home.cabinet.title")}</h1>
           <blockquote class="home-quote">
             <p>
-              <q>{t("home.cabinet.description")}</q>
+              <FontAwesomeIcon icon={faQuoteLeft} size="lg" /> {t("home.cabinet.description")}
             </p>
-            <div>
-              <cite>{t("home.cabinet.author")}</cite>
-              <time datetime="2018-04-30"> – {t("home.cabinet.date")}</time>
-            </div>
           </blockquote>
         </Col>
         <Col md={{ span: 4 }}>
@@ -118,7 +117,6 @@ const Home = () => {
       <Row className="help-row">
         <Col md={{ span: 3, offset: 2 }}>
           <h1>{t("home.question.title")}</h1>
-          <p>{t("home.question.description")}</p>
         </Col>
         <Col md={{ span: 3, offset: 1 }} className="help-button">
           <AppButton

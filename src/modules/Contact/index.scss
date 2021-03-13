@@ -25,7 +25,11 @@
 }
 .w3-padding-24 {
   padding-top: 24px !important;
-  padding-bottom: 24 !important;
+  padding-bottom: 24px !important;
+}
+.w3-padding-12 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
 .w3-center {
   text-align: center !important;
@@ -52,6 +56,19 @@
   padding: 0.01em 16px;
 }
 .maps-container {
-  height: 500px;
+  height: 400px;
+  margin-right : 5%;
   position: relative;
+}
+.icon-infos
+{
+          color: $text-tertiary;
+          svg {
+            font-size: 25;
+
+          }
+}
+
+.infos{
+  line-height: 70%;
 }
