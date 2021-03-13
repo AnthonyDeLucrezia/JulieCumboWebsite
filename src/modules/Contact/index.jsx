@@ -26,7 +26,6 @@ const FormContact = () => (
           <Form.Label>Date de naissance patient</Form.Label>
           <Form.Control type="date"/>
         </Form.Group>
-        test
       </Form.Row>
 
       <Form.Row>
