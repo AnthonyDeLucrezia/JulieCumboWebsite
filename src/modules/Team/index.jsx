@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import AppBadge from "./../../components/appBadge/index.jsx";
+import AppTeamMember from "./../../components/appteamMember/index.jsx";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
@@ -12,7 +12,7 @@ const Team = () => {
       title: "Julie Cumbo",
       subTitle: "Orthodontiste",
       description:
-      "Spécialiste en orthodontie exclusive et fondatrice du cabinet JC Ortho depuis 2008. Votre sourire, votre profil et votre bien être est au cœur de mes préoccupations. Attentive aux évolutions de ma discipline, je m’investis depuis une quinzaine d’années dans ce que la science et la technologie ont de meilleur à offrir. Je m’entoure de spécialistes tels que des stomatologues, chirurgiens maxillo facial, ORL, posturologues, kinésithérapeutes, orthoptistes et logopèdes pour la prise en charge de vos traitements afin de réaliser une orthodontie fonctionnelle optimale. Le domaine des troubles du sommeil chez l’enfant me tient particulièrement à cœur, je reste attentive aux dernières recommandations dans ce domaine. Le sourire et votre bien être restent une priorité."
+        "Spécialiste en orthodontie exclusive et fondatrice du cabinet JC Ortho depuis 2008. Votre sourire, votre profil et votre bien être est au cœur de mes préoccupations. Attentive aux évolutions de ma discipline, je m’investis depuis une quinzaine d’années dans ce que la science et la technologie ont de meilleur à offrir. Je m’entoure de spécialistes tels que des stomatologues, chirurgiens maxillo facial, ORL, posturologues, kinésithérapeutes, orthoptistes et logopèdes pour la prise en charge de vos traitements afin de réaliser une orthodontie fonctionnelle optimale. Le domaine des troubles du sommeil chez l’enfant me tient particulièrement à cœur, je reste attentive aux dernières recommandations dans ce domaine. Le sourire et votre bien être restent une priorité.",
     },
     {
       img: `images/fabian.jpeg`,
@@ -39,8 +39,7 @@ const Team = () => {
       img: `images/roger.jpg`,
       title: "Allison Joniaux",
       subTitle: "Secrétaire",
-      description:
-        "",
+      description: "",
     },
   ];
 
@@ -52,17 +51,14 @@ const Team = () => {
         </Col>
       </Row>
 
-      {team.map((x, index) => (
+      {team.map((x) => (
         <Row className={"team-list"}>
           <Col md={{ span: 12 }} className={"team-list-col"}>
-            <AppBadge
+            <AppTeamMember
               img={x.img}
               title={x.title}
               subTitle={x.subTitle}
               description={x.description}
-              size="large"
-              direction="row"
-              imagePosition={index % 2 == 0 ? "left" : "right"}
             />
           </Col>
         </Row>
