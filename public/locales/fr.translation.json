@@ -1,31 +1,4 @@
 {
-  "home": {
-    "slider": {
-      "title": "JulieCumbo",
-      "subtitle": "Confort, souci du travail bien fait et confiance retrouvée, telles sont nos priorités."
-    },
-    "cabinet": {
-      "title": "Notre cabinet",
-      "description": " Un espace dédié aux soins spécialisés en orthodontie et orthopédie dento-maxillo faciale. Notre objectif est de proposer des traitements qui correspondent aux besoins, mais aussi aux souhaits de nos patients."
-    },
-    "question": {
-      "title": "Des questions ? Une urgence ?",
-      "button": "Nous contacter"
-    },
-    "team": {
-      "title": "Notre équipe",
-      "button": "En savoir plus"
-    },
-    "office": {
-      "title": "Nos locaux"
-    }
-  },
-  "team": {
-    "title": "Notre équipe"
-  },
-  "treatments": {
-    "title": "Nos traitements"
-  },
   "blog": {
     "title": "Blog"
   },
@@ -33,21 +6,82 @@
     "title": "contactez-nous"
   },
   "faq": {
-    "title": "F.A.Q",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis consequat lacus. Curabitur mauris tellus, congue et aliquam nec, faucibus non sapien. Cras id sem lobortis, consequat lacus at, vestibulum massa. Proin sit amet elit quis augue posuere gravida. Nunc et dignissim eros. Duis euismod non sapien et placerat. Pellentesque viverra augue a mi iaculis auctor.",
     "questions": [
       {
-        "title": "Envie d'une bière ?",
-        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
+        "title": "Envie d'une bière ?"
       },
       {
-        "title": "Une petite deuxième ?",
-        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
+        "title": "Une petite deuxième ?"
       },
       {
-        "title": "Dernière pour la route ?",
-        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id."
+        "response": "Suspendisse rhoncus magna nec lacinia maximus. Fusce sed leo sem. Nunc ullamcorper erat molestie leo sollicitudin, vitae elementum velit tincidunt. Morbi nulla mauris, rhoncus in mi at, luctus lobortis mi. Praesent iaculis metus purus, a dapibus magna sollicitudin id.",
+        "title": "Dernière pour la route ?"
       }
-    ]
+    ],
+    "title": "F.A.Q"
+  },
+  "home": {
+    "cabinet": {
+      "description": " Un espace dédié aux soins spécialisés en orthodontie et orthopédie dento-maxillo faciale. Notre objectif est de proposer des traitements qui correspondent aux besoins, mais aussi aux souhaits de nos patients.",
+      "title": "Notre cabinet"
+    },
+    "office": {
+      "title": "Nos locaux"
+    },
+    "question": {
+      "button": "Nous contacter",
+      "title": "Des questions ? Une urgence ?"
+    },
+    "slider": {
+      "subtitle": "Confort, souci du travail bien fait et confiance retrouvée, telles sont nos priorités.",
+      "title": "JulieCumbo"
+    },
+    "team": {
+      "button": "En savoir plus",
+      "title": "Notre équipe"
+    }
+  },
+  "team": {
+    "team": [
+      {
+        "description": "Spécialiste en orthodontie exclusive et fondatrice du cabinet JC Ortho depuis 2008. Votre sourire, votre profil et votre bien être est au cœur de mes préoccupations. Attentive aux évolutions de ma discipline, je m’investis depuis une quinzaine d’années dans ce que la science et la technologie ont de meilleur à offrir. Je m’entoure de spécialistes tels que des stomatologues, chirurgiens maxillo facial, ORL, posturologues, kinésithérapeutes, orthoptistes et logopèdes pour la prise en charge de vos traitements afin de réaliser une orthodontie fonctionnelle optimale. Le domaine des troubles du sommeil chez l’enfant me tient particulièrement à cœur, je reste attentive aux dernières recommandations dans ce domaine. Le sourire et votre bien être restent une priorité.",
+        "img": "images/tony.jpg",
+        "subTitle": "Orthodontiste",
+        "title": "Julie Cumbo"
+      },
+      {
+        "description": "Spécialisée en thérapie myo-fonctionnelle assure la prise en charge fonctionnelle associée aux traitements orthodontiques.",
+        "img": "images/fabian.jpeg",
+        "subTitle": "Logopède",
+        "title": "Analisa Sorini"
+      },
+      {
+        "description": "Assure la préparation, la désinfection et la stérilisation du matériel et du cabinet. Elle vous rassurera et vous exposera les consignes d’hygiènes et les recommandations pour mener à bien votre traitement.",
+        "img": "images/julie.jpg",
+        "subTitle": "Assistante dentaire",
+        "title": "Gwendoline Di Nicolo"
+      },
+      {
+        "description": " Nos deux secrétaires médicales assurent l’accueil des patients et vous aidera dans vos démarches administratives. Elles assurent votre suivi de dossier mutuelle, assurance et financier.",
+        "img": "images/lechat.jpg",
+        "subTitle": "Secrétaire",
+        "title": "Anne-Sophie De Weer"
+      },
+      {
+        "description": "",
+        "img": "images/roger.jpg",
+        "subTitle": "Secrétaire",
+        "title": "Allison Joniaux"
+      }
+    ],
+    "buttonPlus": "Afficher plus",
+    "buttonMoins": "Afficher moins",
+    "title": "Notre équipe"
+  },
+  "treatments": {
+    "title": "Nos traitements"
   }
 }
