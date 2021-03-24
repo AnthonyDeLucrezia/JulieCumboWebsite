@@ -39,17 +39,17 @@ const FormContact = () => (
       </Form.Row>
 
       <Form.Group controlId="formGridSubject">
-        <Form.Label>Message</Form.Label>
+        <Form.Label>Objet</Form.Label>
         <Form.Control as="select">
-          <option value="0">Choisir votre catégorie</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>Urgence</option>
+          <option>Nouveau patient</option>
+          <option>Modifier / Ajouter RDV</option>
+          <option>Fournisseur</option>
+          <option>Autres</option>
         </Form.Control>
       </Form.Group>
 
+      <Form.Label>Message</Form.Label>
       <Form.Group controlId="forGridMessage">
         <Form.Control as="textarea" rows={4} />
       </Form.Group>
@@ -64,13 +64,13 @@ const FormContact = () => (
 const Infos = () => (
   <div className="w3-padding-48">
     <p>
-      <FontAwesomeIcon icon={faClock} /> Horaire :
+      <FontAwesomeIcon icon={faClock} /> Horaire consultations :
     </p>
     <div className="infos">
-      <p>Lundi : 8h30 à 13h00 / 14h00 à 17h00</p>
+      <p>Lundi : 8h30 à 13h00 / 14h00 à 18h30</p>
       <p>Mardi : Fermé</p>
       <p>Mecredi : 8h30 à 14h30</p>
-      <p>Jeudi : 8h30 à 13h00 / 14h00 à 17h00</p>
+      <p>Jeudi : 8h30 à 13h00 / 14h00 à 18h30</p>
       <p>Vendredi : 8h30 à 16h30</p>
     </div>
     <div>
