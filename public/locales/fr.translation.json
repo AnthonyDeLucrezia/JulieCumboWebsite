@@ -1,4 +1,9 @@
 {
+  "infos": {
+        "phone": "065/47.59.96",
+        "email": "info@jcortho.be",
+        "address":"Chasse de Saint-Ghislain 24,7300 Boussu"
+  },
   "blog": {
     "title": "Blog"
   },
@@ -120,6 +125,17 @@
     "title": "Notre équipe"
   },
   "treatments": {
+    "treatments": [
+        {
+            "img": "images/treatment.jpg",
+            "title": "Tooth Extraction",
+            "description": "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands."
+        },
+        {
+            "img": "images/treatment.jpg",
+            "title": "Tooth Extraction",
+            "description": "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands."
+        }],
     "title": "Nos traitements"
   }
 }

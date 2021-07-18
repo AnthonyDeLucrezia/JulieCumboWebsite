@@ -6,20 +6,7 @@ import "./index.scss";
 
 const Treatments = () => {
   const { t } = useTranslation();
-
-  const treatment = [
-    {
-      img: `images/treatment.jpg`,
-      title: "Tooth Extraction",
-      description:
-        "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands.",
-    },
-    {
-      img: `images/treatment.jpg`,
-      title: "Tooth Extraction",
-      description:
-        "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands.",
-    }];
+  const treatment = t("treatments.treatments");
 
   return (
     <div className={"treatments-container"}>

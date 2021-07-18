@@ -1,27 +1,33 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import "./index.scss";
-import "/src/styles/w3-style.scss";
 
 const AppTreatment = (props) => {
-        const { className, img, title, description } = props;
-      
-        let badgeClassName = "app-treatment-container";
-      
-        if (className) badgeClassName = `${badgeClassName} ${className}`;
-      
-        return (
-            <div className={badgeClassName}>
-                <div className="w3-row">
-                    <div className="w3-half">
-                        <img src={img} alt="treatment-img" />
-                    </div>
-                    <div className="w3-half w3-padding-large">
-                        {title && <h4 className="treatment-title w3-padding-24 center">{title}</h4>}
-                        {description && <div className="treatment-desc center">{description}</div>}
-                    </div>
-                </div>
+  const { t } = useTranslation();
+  const { className, img, title, description } = props;
+
+  let badgeClassName = "app-treatment-container";
+
+  if (className) badgeClassName = `${badgeClassName} ${className}`;
+
+  return (
+    <div className={badgeClassName}>
+        <div className="treatment-content">
+            <div className="treatment-img-container">
+                <img src={img} alt="treatment-img" />
             </div>
-            );
-        };
-      
-    export { AppTreatment as default };
+            <div className="treatment-test">
+            <div className="treatment-title-container">
+                {title && <div className="treatment-title">{title}</div>}
+            </div>
+            <div className="treatment-body">
+                {description && <p className="treatment-desc">{description}</p>}
+            </div>
+            </div>
+        </div>
+    </div>
+  );
+};
+
+export { AppTreatment as default };
