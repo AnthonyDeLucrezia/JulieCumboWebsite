@@ -1,6 +1,8 @@
 @import "./../../styles/colors.scss";
+@import "./../../styles/w3-style.scss";
 .contact-container {
   padding-bottom: 10vh;
+  
   .contact-title {
     h1 {
       padding: 5vh 0px;
@@ -15,10 +17,24 @@
   }
 }
 
-.w3-content {
-  max-width: 980px;
-  margin: auto;
-}
+
+    .social-header-icon-instagram a{
+      padding-right: 20px;
+      color : $bg-secondary !important;
+    }
+    .social-header-icon-instagram a:hover{
+      color : $social-icon-instagram !important;
+    }
+    .social-header-icon-fb a{
+      padding-right: 20px;
+      color : $bg-secondary !important;
+    }
+    .social-header-icon-fb a:hover{
+      color : $social-icon-fb !important;
+    }
+  
+
+
 .w3-padding-48 {
   padding-top: 48px !important;
   padding-bottom: 48px !important;

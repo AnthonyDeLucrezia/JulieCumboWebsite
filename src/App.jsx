@@ -18,7 +18,7 @@ export const menu = [
   { title: "Accueil", link: "/home", component: <Home /> },
   { title: "Equipe", link: "/team", component: <Team /> },
   { title: "Traitements", link: "/treatments", component: <Treatments /> },
-  { title: "Blog", link: "/blog", component: <Blog /> },
+  //{ title: "Blog", link: "/blog", component: <Blog /> },
   { title: "F.A.Q", link: "/faq", component: <FAQ /> },
   { title: "Contact", link: "/contact", component: <Contact /> },
 ];

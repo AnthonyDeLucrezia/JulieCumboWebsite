@@ -1,9 +1,10 @@
 @import "./../../styles/colors.scss";
 .treatments-container {
   padding-bottom: 10vh;
-  max-width: 980px;
   margin: auto;
   .treatments-title {
+    padding: 0px 10vw;
+
     h1 {
       padding: 5vh 0px;
       text-transform: uppercase;
@@ -15,32 +16,7 @@
       text-align: center;
     }
   }
-}
-
-.test
-{
-  background-color: red;
-}
-
-.test2
-{
-  background-color: green;
-}
-
-.w3-content {
-  max-width: 980px;
-  margin: auto;
-}
-
-.w3-padding-48 {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
-}
-.w3-padding-24 {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
-.w3-padding-12 {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
+  .treatments-list {
+    padding: 0px 10vw;
+  }
 }

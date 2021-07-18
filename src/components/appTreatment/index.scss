@@ -1,0 +1,18 @@
+@import "/src/styles/colors.scss";
+
+.app-treatment-container
+{
+    margin-bottom:48px;
+    background-color:$text-tertiary;
+    box-shadow: 0px 0px 6px 1px rgba(56,56,56,0.49);
+    color : $text-secondary;
+}
+
+.treatment-title {
+    font-weight: 600;
+    width: 200px;
+    padding-top: 5px;
+  }
+
+  img{width: 100%;}
+

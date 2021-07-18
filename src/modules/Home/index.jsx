@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import Typed from "./typed.js";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
@@ -15,69 +16,84 @@ const Home = () => {
   const history = useHistory();
   const team = [
     {
-      img: `images/tony.jpg`,
+      img: `images/julie.png`,
       title: "Julie Cumbo",
       subTitle: "Orthodontiste",
     },
     {
-      img: `images/fabian.jpeg`,
+      img: `images/analisa.png`,
       title: "Analisa Sorini",
       subTitle: "Logopède",
     },
     {
-      img: `images/julie.jpg`,
-      title: "Gwendoline Di Nicolo",
+      img: `images/liza.png`,
+      title: "Liza Bourlard",
       subTitle: "Assisstante dentaire",
     },
     {
-      img: `images/lechat.jpg`,
+      img: `images/anne-sophie.png`,
       title: "Anne-Sophie De Weer",
       subTitle: "Secrétaire",
-    },
-    {
-      img: `images/allison.jpg`,
-      title: "Allison Joniaux",
-      subTitle: "Secrétaire",
-    },
+    }
   ];
 
   const imageCatalog = [
     {
-      img: `images/img1.jpeg`,
+      img: `images/cabinet1.JPG`,
       description: "Developer",
     },
     {
-      img: `images/img2.jpeg`,
+      img: `images/cabinet2.JPG`,
       description: "Developer",
     },
     {
-      img: `images/img3.jpeg`,
+      img: `images/cabinet3.JPG`,
       description: "La boss",
     },
     {
-      img: `images/img4.jpeg`,
+      img: `images/cabinet4.JPG`,
       description: "Il est mignon",
     },
     {
-      img: `images/img5.jpeg`,
+      img: `images/cabinet5.JPG`,
       description: "Un type random",
     },
     {
-      img: `images/img6.jpg`,
+      img: `images/cabinet6.JPG`,
       description: "Un type random",
     },
     {
-      img: `images/img7.jpg`,
+      img: `images/cabinet7.JPG`,
       description: "Il est mignon",
     },
     {
-      img: `images/img8.jpg`,
+      img: `images/cabinet8.JPG`,
       description: "Un type random",
     },
     {
-      img: `images/img9.jpg`,
+      img: `images/cabinet9.JPG`,
       description: "Un type random",
     },
+    {
+        img: `images/cabinet10.JPG`,
+        description: "Un type random",
+    },
+    {
+        img: `images/cabinet11.JPG`,
+        description: "Un type random",
+      },
+      {
+        img: `images/cabinet12.JPG`,
+        description: "Un type random",
+      },
+      {
+        img: `images/cabinet13.JPG`,
+        description: "Un type random",
+      },
+      {
+        img: `images/cabinet14.JPG`,
+        description: "Un type random",
+      },
   ];
 
   const onTeamClick = () => {
@@ -88,18 +104,32 @@ const Home = () => {
     history.push("/contact");
   };
 
+  const TypedEffect = () => {
+    const typeTarget = useRef(null);
+    
+    useEffect(() => {
+      const typed = new Typed(typeTarget.current, {
+        strings: ["Confort, souci du travail bien fait et confiance retrouvée, telles sont nos priorités."],
+        typeSpeed: 80,
+        loop:true,
+      });
+  
+      return () => {
+        typed.destroy();
+      };
+    }, []);
+  
+    return <span ref={typeTarget} />;
+  };
+
   return (
     <div className={"home-container"}>
       <div className="home-slider">
-        <img src={`images/pexels-evg-culture-1170979.jpg`} alt="First slide" />
-        <div className="home-slider-content">
-          <div className="home-slider-text">
-            <div>
-              <h1>{t("home.slider.title")}</h1>
-              <p>{t("home.slider.subtitle")}</p>
-            </div>
-          </div>
-        </div>
+        <img src={`images/header.jpeg`} alt="First slide" />
+        <div className="home-slider-text w3-display-middle w3-center w3-padding-large">
+		    <h1>{t("home.slider.title")}</h1>
+            <p><TypedEffect/></p>
+	    </div>
       </div>
       <Row className="home-about-us">
         <Col md={{ span: 4, offset: 2 }} className="cabinet-text">
@@ -114,11 +144,11 @@ const Home = () => {
           <img src={`images/map.png`} alt="First slide" className={"img-map"} />
         </Col>
       </Row>
-      <Row className="help-row">
-        <Col md={{ span: 3, offset: 2 }}>
-          <h1>{t("home.question.title")}</h1>
+      <Row className="help-row w3-padding-48">
+        <Col md={{ span: 4, offset: 2 }}>
+          <h2>{t("home.question.title")}</h2>
         </Col>
-        <Col md={{ span: 3, offset: 1 }} className="help-button">
+        <Col md={{ span: 4, offset: 1 }} className="help-button">
           <AppButton
             text={t("home.question.button")}
             variant="secondary"

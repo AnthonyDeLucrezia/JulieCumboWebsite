@@ -1,27 +1,45 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import AppTreatment from "./../../components/AppTreatment/index.jsx";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
 const Treatments = () => {
   const { t } = useTranslation();
+
+  const treatment = [
+    {
+      img: `images/treatment.jpg`,
+      title: "Tooth Extraction",
+      description:
+        "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands.",
+    },
+    {
+      img: `images/treatment.jpg`,
+      title: "Tooth Extraction",
+      description:
+        "Each of our patients are eligible for this personalized service. Schedule yours today, and we promise you’ll leave our clinic well-informed and confident that your health is in the best of hands.",
+    }];
+
   return (
     <div className={"treatments-container"}>
-      <Row className="treatments-title">
+      <Row className="treatments-title w3-padding-16">
         <Col>
           <h1>{t("treatments.title")}</h1>
         </Col>
       </Row>
-      <div className="w3-content">
-      <Row className="w3-padding-48">
-        <Col className="test">PHOTO</Col>
-        <Col xs={10} className="test2">TEXT</Col>
-      </Row>
-      <Row>
-        <Col className="test">PHOTO</Col>
-        <Col className="test2">TEXT</Col>
-      </Row>
-      </div>
+      {treatment.map((x) => (
+          <Row className={"treatments-list"}>
+              <Col md={{ span: 12 }} sm={{ span: 12 }}>
+              <AppTreatment
+              img={x.img}
+              title={x.title}
+              description={x.description}
+            />
+            </Col>
+          </Row>
+            
+      ))}
     </div>
   );
 };
