@@ -10,7 +10,7 @@ const Team = () => {
 
   return (
     <div className={"team-container"}>
-      <Row className="team-title">
+      <Row className="team-title w3-padding-16">
         <Col>
           <h1>{t("team.title")}</h1>
         </Col>
@@ -18,7 +18,7 @@ const Team = () => {
 
       {team.map((x) => (
         <Row className={"team-list"}>
-          <Col md={{ span: 12 }} className={"team-list-col"}>
+          <Col md={{ span: 12 }} sm={{ span: 12 }} className={"team-list-col"}>
             <AppTeamMember
               img={x.img}
               title={x.title}

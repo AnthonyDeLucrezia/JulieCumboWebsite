@@ -10,14 +10,9 @@ const FAQ = () => {
 
   return (
     <div className={"faq-container"}>
-      <Row className="faq-title">
+      <Row className="faq-title w3-padding-16">
         <Col>
           <h1>{t("faq.title")}</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p className="faq-descritpion">{t("faq.description")}</p>
         </Col>
       </Row>
       <Row>

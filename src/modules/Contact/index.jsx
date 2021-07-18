@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import MapContainer from "/src/components/googleMaps/index.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {faFacebookSquare,faInstagram} from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-
 import "./index.scss";
 
 const FormContact = () => (
@@ -61,6 +61,16 @@ const FormContact = () => (
   </div>
 );
 
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 5
+        }}
+    />
+);
+
 const Infos = () => (
   <div className="w3-padding-48">
     <p>
@@ -96,13 +106,21 @@ const Map = () => (
 const Contact = () => {
   const { t } = useTranslation();
   return (
-    <div className="contact-container">
-      <Row className="contact-title">
+    <div className="contact-container w3-content">
+      <Row className="contact-title w3-padding-16">
         <Col>
           <h1>{t("contact.title")}</h1>
         </Col>
       </Row>
       <div className="w3-content">
+      <div class="w3-center">
+      <ColoredLine/>
+      <div >
+      <span className="social-header-icon-fb"><a href="https://www.facebook.com/cabinetjcortho" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} size="2x"/></a></span>
+      <span className="social-header-icon-instagram"><a href="https://www.instagram.com/jcortho/" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a></span>
+      </div>
+    <ColoredLine/>
+    </div>
         <FormContact />
         <Row>
           <Col>

@@ -1,9 +1,10 @@
 @import "./../../styles/colors.scss";
 .treatments-container {
   padding-bottom: 10vh;
-  max-width: 980px;
   margin: auto;
   .treatments-title {
+    padding: 0px 10vw;
+
     h1 {
       padding: 5vh 0px;
       text-transform: uppercase;
@@ -14,5 +15,8 @@
       color: $text-tertiary;
       text-align: center;
     }
+  }
+  .treatments-list {
+    padding: 0px 10vw;
   }
 }

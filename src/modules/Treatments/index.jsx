@@ -23,17 +23,22 @@ const Treatments = () => {
 
   return (
     <div className={"treatments-container"}>
-      <Row className="treatments-title">
+      <Row className="treatments-title w3-padding-16">
         <Col>
           <h1>{t("treatments.title")}</h1>
         </Col>
       </Row>
       {treatment.map((x) => (
-            <AppTreatment
+          <Row className={"treatments-list"}>
+              <Col md={{ span: 12 }} sm={{ span: 12 }}>
+              <AppTreatment
               img={x.img}
               title={x.title}
               description={x.description}
             />
+            </Col>
+          </Row>
+            
       ))}
     </div>
   );
