@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import Typed from "./typed.js";
+import React from "react";
 import "./index.scss";
 import AppButton from "./../../components/button/index.jsx";
 import AppBadge from "./../../components/appBadge/index.jsx";
@@ -9,7 +8,7 @@ import { useHistory } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
-
+import TypedEffect from "./TypedEffect.jsx";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -34,7 +33,7 @@ const Home = () => {
       img: `images/anne-sophie.png`,
       title: "Anne-Sophie De Weer",
       subTitle: "Secrétaire",
-    }
+    },
   ];
 
   const imageCatalog = [
@@ -75,25 +74,25 @@ const Home = () => {
       description: "Un type random",
     },
     {
-        img: `images/cabinet10.JPG`,
-        description: "Un type random",
+      img: `images/cabinet10.JPG`,
+      description: "Un type random",
     },
     {
-        img: `images/cabinet11.JPG`,
-        description: "Un type random",
-      },
-      {
-        img: `images/cabinet12.JPG`,
-        description: "Un type random",
-      },
-      {
-        img: `images/cabinet13.JPG`,
-        description: "Un type random",
-      },
-      {
-        img: `images/cabinet14.JPG`,
-        description: "Un type random",
-      },
+      img: `images/cabinet11.JPG`,
+      description: "Un type random",
+    },
+    {
+      img: `images/cabinet12.JPG`,
+      description: "Un type random",
+    },
+    {
+      img: `images/cabinet13.JPG`,
+      description: "Un type random",
+    },
+    {
+      img: `images/cabinet14.JPG`,
+      description: "Un type random",
+    },
   ];
 
   const onTeamClick = () => {
@@ -104,39 +103,27 @@ const Home = () => {
     history.push("/contact");
   };
 
-  const TypedEffect = () => {
-    const typeTarget = useRef(null);
-    
-    useEffect(() => {
-      const typed = new Typed(typeTarget.current, {
-        strings: ["Confort, souci du travail bien fait et confiance retrouvée, telles sont nos priorités."],
-        typeSpeed: 80,
-        loop:true,
-      });
-  
-      return () => {
-        typed.destroy();
-      };
-    }, []);
-  
-    return <span ref={typeTarget} />;
-  };
-
   return (
     <div className={"home-container"}>
-      <div className="home-slider">
-        <img src={`images/header.jpeg`} alt="First slide" />
+      <div
+        className="home-slider"
+        style={{ backgroundImage: `url(images/header.jpeg)` }}
+      >
+        {/* <img src={`images/header.jpeg`} alt="First slide" /> */}
         <div className="home-slider-text w3-display-middle w3-center w3-padding-large">
-		    <h1>{t("home.slider.title")}</h1>
-            <p><TypedEffect/></p>
-	    </div>
+          <h1>{t("home.slider.title")}</h1>
+          <p>
+            <TypedEffect />
+          </p>
+        </div>
       </div>
       <Row className="home-about-us">
         <Col md={{ span: 4, offset: 2 }} className="cabinet-text">
           <h1>{t("home.cabinet.title")}</h1>
           <blockquote class="home-quote">
             <p>
-              <FontAwesomeIcon icon={faQuoteLeft} size="lg" /> {t("home.cabinet.description")}
+              <FontAwesomeIcon icon={faQuoteLeft} size="lg" />{" "}
+              {t("home.cabinet.description")}
             </p>
           </blockquote>
         </Col>
