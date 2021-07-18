@@ -4,8 +4,11 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
+import { useTranslation } from "react-i18next";
+
 
 const LogoHeader = () => {
+  const { t } = useTranslation();
   return (
     <div className="logo-header">
       <div className="logo-item">
@@ -18,7 +21,7 @@ const LogoHeader = () => {
           </div>
           <div className="contact-text">
             <h5>Appelez-nous</h5>
-            <span>065/47.59.96</span>
+            <span>{t("infos.phone")}</span>
           </div>
         </div>
         <div className="contact-col">
@@ -27,7 +30,7 @@ const LogoHeader = () => {
           </div>
           <div className="contact-text">
             <h5>Ecrivez-nous</h5>
-            <span>info@jcortho.be</span>
+            <span>{t("infos.email")}</span>
           </div>
         </div>
       </div>

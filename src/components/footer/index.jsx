@@ -5,12 +5,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+
 
 
 import "./index.scss";
 
 const AppFooter = () => {
   const history = useHistory();
+  const { t } = useTranslation();
+
   return (
     <Container fluid>
       <Row className="app-footer">
@@ -35,13 +39,13 @@ const AppFooter = () => {
             <span className="footer-title">Contact</span>
             <ul>
               <li>
-                <span>065/47.59.96</span>
+                <span>{t("infos.phone")}</span>
               </li>
               <li>
-                <span>info@jcortho.com</span>
+                <span>{t("infos.email")}</span>
               </li>
               <li>
-                <span>Chasse de Saint-Ghislain 24,7300 Boussu</span>
+                <span>{t("infos.address")}</span>
               </li>
             </ul>
           </div>

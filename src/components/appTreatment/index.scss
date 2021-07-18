@@ -1,18 +1,45 @@
 @import "/src/styles/colors.scss";
 
-.app-treatment-container
-{
-    margin-bottom:48px;
-    background-color:$text-tertiary;
-    box-shadow: 0px 0px 6px 1px rgba(56,56,56,0.49);
-    color : $text-secondary;
+.app-treatment-container {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: $bg-primary;
+  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+
+  .treatment-content {
+    display: flex;
+    flex-direction: row;
+
+    .treatment-img-container {
+      padding-right: 30px;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .treatment-test
+    {    display: flex;
+        flex-direction: column;
+    .treatment-title-container {
+
+      .treatment-title {
+        color: $text-tertiary;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-top: 5px;
+        font-size: 18px;
+      }
+    }
+
+    .treatment-body {
+    width: 100%;
+    text-align: justify;
+    padding-top: 15px;
+        .treatment-desc {
+      padding-top: 15px;
+        }
+    }
 }
-
-.treatment-title {
-    font-weight: 600;
-    width: 200px;
-    padding-top: 5px;
   }
-
-  img{width: 100%;}
-
+}
