@@ -1,0 +1,19 @@
+@import "./../../styles/colors.scss";
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+
+  .page-item.active .page-link {
+    color: $text-secondary;
+    background-color: $bg-secondary;
+    border-color: $bg-secondary;
+  }
+
+  .page-link {
+    &:hover {
+      color: $text-quaternary;
+    }
+    color: $text-quaternary;
+  }
+}
